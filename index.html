@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>La Jardinera Floreria</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Montserrat:ital,wght@0,300..600;1,300..600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="./static/css/tailwind.css">
+</head>
+<body class="bg-background text-on-background min-h-screen antialiased flex flex-col font-body-md">
+
+<header class="bg-surface-container-lowest/90 dark:bg-zinc-950/90 backdrop-blur-md sticky top-0 border-b border-orange-100/20 dark:border-zinc-800 z-50">
+    <nav class="flex justify-between items-center w-full px-10 py-6 max-w-7xl mx-auto">
+        <div class="flex items-center">
+            <button id="theme-toggle" aria-label="Toggle Dark Mode" class="text-primary hover:opacity-80 transition-opacity duration-300">
+                <span class="material-symbols-outlined text-2xl">dark_mode</span>
+            </button>
+        </div>
+
+        <div class="hidden md:flex gap-8 items-center text-sm uppercase tracking-widest font-medium">
+            <a class="text-primary border-b border-primary pb-1" href="#">Inicio</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Servicios</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Galería</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Contacto</a>
+        </div>
+
+        <div class="text-2xl font-light tracking-tight text-primary">
+            La Jardinera
+        </div>
+    </nav>
+</header>
+
+<main class="flex-grow">
+    <section class="relative w-full h-[819px] min-h-[600px] flex items-center justify-center overflow-hidden bg-surface-variant">
+        <div class="absolute inset-0 z-0">
+            <img alt="Elegant wedding bouquet with white and peach roses, eucalyptus, and delicate greenery held by a bride in a soft lit romantic setting" class="w-full h-full object-cover opacity-80 mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3CfoE0sAKbvQDZbnlMST5uuGjzFEbDgcYRrVybsjhCgnY6NCv-97lbA25zBbPNEV5fPhTqowWK80b9vxPC_Ez2dltnE3FSxa4dX7NQhR-RO-0nS2q96UNBoODNvd0QtGxlAp2Vj2hoXySBOrtDPnGUDD8ao709PQiDIF5hM-d8f5BuUSQ-oIzNwDy5X2tntyZZNha0Lz5nRR86mQxE65gI051ONXf0jIOo_xql8vV1NYW-oCE2M3gFD3KX-zyF8_acbZ5MuT3yUGr"/>
+        </div>
+        <div class="relative z-10 text-center px-6 max-w-4xl mx-auto flex flex-col items-center gap-8">
+            <h1 class="font-display-lg text-display-lg text-white drop-shadow-lg">
+                Creamos momentos inolvidables con flores
+            </h1>
+            <p class="font-body-lg text-body-lg text-white/90 max-w-2xl drop-shadow-md">
+                Diseño floral artesanal y curaduría de eventos para celebrar la belleza efímera de la naturaleza.
+            </p>
+            <a class="mt-4 px-8 py-4 bg-primary text-on-primary font-label-lg text-label-lg rounded-DEFAULT hover:bg-surface-tint transition-colors shadow-lg" href="#galeria">
+                Ver Galería
+            </a>
+        </div>
+    </section>
+
+    <section class="py-section-gap px-margin max-w-container-max mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="font-display-md text-display-md text-on-background mb-4">Nuestros Servicios</h2>
+            <div class="w-16 h-px bg-primary mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+            <div class="bg-surface-container-lowest p-10 flex flex-col items-center text-center group hover:-translate-y-2 transition-transform duration-300 shadow-sm border border-surface-variant/30">
+                <div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center text-primary mb-6 group-hover:bg-primary-container group-hover:text-on-background transition-colors">
+                    <span class="material-symbols-outlined text-3xl font-light">favorite</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md text-on-background mb-4">Bodas</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                    Diseño integral para tu día especial. Desde ramos de novia hasta arcos florales y centros de mesa.
+                </p>
+            </div>
+            <div class="bg-surface-container-lowest p-10 flex flex-col items-center text-center group hover:-translate-y-2 transition-transform duration-300 shadow-sm border border-surface-variant/30">
+                <div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center text-primary mb-6 group-hover:bg-primary-container group-hover:text-on-background transition-colors">
+                    <span class="material-symbols-outlined text-3xl font-light">celebration</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md text-on-background mb-4">Eventos</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                    Ambientación floral para eventos corporativos, lanzamientos de marca y celebraciones íntimas.
+                </p>
+            </div>
+            <div class="bg-surface-container-lowest p-10 flex flex-col items-center text-center group hover:-translate-y-2 transition-transform duration-300 shadow-sm border border-surface-variant/30">
+                <div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center text-primary mb-6 group-hover:bg-primary-container group-hover:text-on-background transition-colors">
+                    <span class="material-symbols-outlined text-3xl font-light">local_florist</span>
+                </div>
+                <h3 class="font-headline-md text-headline-md text-on-background mb-4">Arreglos Personalizados</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                    Ramos a medida para regalar o decorar tus espacios cotidianos con elegancia botánica.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-section-gap px-margin bg-surface-container-low">
+        <div class="max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="order-2 lg:order-1 relative h-[600px] w-full rounded-DEFAULT overflow-hidden">
+                <img alt="Beautifully decorated long wooden dining table set for a wedding reception outdoors, featuring abundant floral runner, candlelight, and crystal glassware" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_6YdlPOYmKIHtSPd13zhmJbGYTzNvXNriCchxQEDAOtUqWIY_3IUrfyY3lH1tFHa5PjGQbDpKXjHCMlAdou7SpCMpoanrtRdwzmxF3A-jr7BfMjSZddelySTBnJJegebGLDiVGOdrg7OE3tQbIw0zGyx6WkvtfFu7sdZvRoXhFUtPRYqjO9dsjMs_taY0hckUE9w5vPHt7-xRabmqyRLjgZaypODcj9lI5WBIYc-jkl0kWcK1YeF3SnNDK8RnYrw8XZQ6Q6RgOEme"/>
+            </div>
+            <div class="order-1 lg:order-2 flex flex-col gap-8">
+                <h2 class="font-display-md text-display-md text-on-background">Pasión por la Naturaleza</h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant">
+                    En La Jardinera, creemos que cada flor cuenta una historia. Nuestro enfoque editorial busca resaltar la textura, el color y el movimiento natural de cada tallo.
+                </p>
+                <p class="font-body-lg text-body-lg text-on-surface-variant">
+                    Trabajamos en íntima colaboración con la naturaleza, seleccionando cuidadosamente las especies más hermosas de cada temporada para crear composiciones que evocan emoción y sofisticación.
+                </p>
+                <div class="pt-4">
+                    <a class="inline-flex items-center gap-2 font-label-lg text-label-lg text-primary hover:text-surface-tint transition-colors pb-1 border-b border-primary" href="#">
+                        Conoce nuestra historia <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-section-gap px-margin max-w-container-max mx-auto" id="galeria">
+        <div class="text-center mb-16 flex flex-col gap-4 items-center">
+            <h2 class="font-display-md text-display-md text-on-background">Galería Editorial</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-xl">Una selección de nuestras piezas favoritas, diseñadas con intención y amor por el detalle botánico.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-12 auto-rows-[300px] gap-gutter">
+            <div class="md:col-span-8 row-span-2 relative group overflow-hidden bg-surface-variant rounded-DEFAULT">
+                <img alt="Close-up of a luxurious organic floral arrangement featuring large creamy peonies, wild roses, and dark textured foliage against a soft neutral background" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx8yn3cmrNJ7Q_FDXPgUYdIDhUHxUquXUOuhTsIyVGY2aT5lrePAR9mKAH0Lv7yyd68bZGJQao_7khkjUPE_IQ3BiBF_qOdsYc58D-0M4e9DFQf1GnJq7ZMNX3MQIBD0vRSr3yWFhZ7rMncUl0DK_dV2axosfae5v05ti60_VfaHPVm2SfIaDnQ-e60_b-MtbJtrpXImrZqUPmMMLEJaGT0KjbmifmHowVCLgaTErCy-_Z2uS5cDehS_DP3Ujj8fhBa_AwW6TjGamA"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
+                    <span class="font-headline-md text-headline-md text-white">Ramos de Novia</span>
+                </div>
+            </div>
+            <div class="md:col-span-4 row-span-1 relative group overflow-hidden bg-surface-variant rounded-DEFAULT">
+                <img alt="Detail shot of a minimalist bouttoniere with a single white ranunculus and subtle dried grass on a textured grey linen suit lapel" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEn-a2fOnreAig7dQ_q644W1G3bSVWa9FxSFtRrkNWO8PMDBLRTzlD45Rf0VOk0ZTtpuoFGAYNq6-OjO1hTmSgkQGvHdc8lTKZpGb52w5TJ4QrEJ6ZW4BaDLynBcDwTwIf51ZSuTFCocs4cnOI5xHNSzzQLRx3vJrkT4a_LipABMzPGPabYmaLOnLGP2-N0duvpqVqExCjTVzE51AB1ZLKnvSlRPZpV2hx3fVgoWvY-VQbdPyT7TQmBpWrq5i_XISBr1yJinbEeyQ5"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <span class="font-headline-md text-headline-md text-white">Detalles Menores</span>
+                </div>
+            </div>
+            <div class="md:col-span-4 row-span-1 relative group overflow-hidden bg-surface-variant rounded-DEFAULT">
+                <img alt="Woman working on a delicate flower crown in a rustic sunlit studio surrounded by buckets of fresh spring blooms" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1NlThNqPA_6ikmnDK5-f2M4TPfkP4w000niebT0ESNg29V6GGuxCDzA1nZfsmyZfLRie7-8_sEKRVouCmSK8voq3yHZ1ymvJELaEbtB_043bY8i1VVj-QZWTW2jUdkG1sZNm9ual0w_ZBgWD-OjaI1pb7bnVUIKLN_Ww0eKGFY4-2fPFSiNCuWY1n3B_hX4NJ2ezrybfD_XfpHaNVsd1hPBUPfF7WlRjJRW8fBw3J069RWf47245ICeBX-I3OB7HMXWcd1VG7reI-"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                    <span class="font-headline-md text-headline-md text-white">Editorial</span>
+                </div>
+            </div>
+            <div class="md:col-span-12 row-span-1 h-[400px] relative group overflow-hidden bg-surface-variant rounded-DEFAULT">
+                <img alt="Grand dramatic floral arch installation framing a scenic outdoor ceremony space at sunset with warm golden light" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZS-INQbOp4GN-eNhhKV5nYnuJHt4gh1Pi8xWdRTM61E87RLsr9eoG9MGsg063JUcbuEBbNl0BGJwuZHxtIPfcSyJ7EcRY5Mjp8uOoFCCUtodrSRxsLjF7yCt3oVRuMD4kmS2ZE4OVFWOo6BEbYcZNhU8WkgP5jDYAWxAg8CwBmocquzHvU3tZoYnXl7lSS6ygJAbM9nrof-gvBpuEj9vXHq6iJIUJ-JA4eCJcMbjJX-U9zu84k2Pu9xVOIr4trQM7fBYqdgellZK5"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-8">
+                    <span class="font-display-md text-display-md text-white">Instalaciones a Gran Escala</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-surface-container-low w-full pt-20 pb-10 border-t border-surface-variant text-primary font-display-md text-sm uppercase tracking-widest mt-auto">
+    <div class="flex flex-col items-center gap-8 px-10 max-w-7xl mx-auto">
+        <div class="text-xl font-display-lg text-on-background mb-4">
+            La Jardinera
+        </div>
+        <div class="flex gap-8 flex-wrap justify-center">
+            <a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Instagram</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Pinterest</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors" href="#">WhatsApp</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Ubicación</a>
+        </div>
+        <div class="text-on-surface-variant mt-8 text-xs font-body-sm tracking-normal flex flex-col items-center gap-2">
+            <span>© 2026 La Jardinera. El Arte de lo Efímero.</span>
+            <span class="font-semibold text-primary/80">Desarrollo web por Felipe Cuevas</span>
+        </div>
+    </div>
+</footer>
+<script src="./static/js/scripts.js" defer></script>
+</body>
+</html>
