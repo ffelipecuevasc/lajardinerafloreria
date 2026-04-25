@@ -56,3 +56,41 @@
         mask-size: 350vmax;
     }
 }
+
+/* Animación de Brillo para la Marca */
+@keyframes shine {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+}
+
+.animate-shine {
+    background: linear-gradient(
+            110deg,
+            rgb(var(--color-primary)) 40%,
+            rgba(255, 255, 255, 0.8) 50%,
+            rgb(var(--color-primary)) 60%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shine 4s linear infinite;
+    display: inline-block;
+}
+
+/* Sombra elegante para el texto */
+.brand-shadow {
+    filter: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.15));
+}
+
+/* Máscara CSS para el Logotipo Externo */
+.logo-mask {
+    mask-image: url('../img/logotipo.svg');
+    -webkit-mask-image: url('../img/logotipo.svg');
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+}
